@@ -25,6 +25,13 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    margin: 0;
+}
+
 h3 {
     font-size: 24px;
     font-weight: bold;
@@ -39,18 +46,37 @@ h4 {
     margin: 0;
 }
 
+h5 {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0;
+}
+
 p {
     margin: 0;
 }
 
-.header-block {
+.header-block-bg {
     background-color: #1F2937;
     color: #F9FAF8;
 }
 
+.header-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 1;
+}
+
 .nav-bar {
     display: flex;
-    margin: 0;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    max-width: 850px;
+    width: 100%;
 }
 
 .nav-bar a {
@@ -58,11 +84,122 @@ p {
 }
 
 .nav-bar .header-links {
-    margin-left: auto;
     gap: 20px;
     display: flex;
+    margin-left: auto;
 }
 
 .navbar li {
     padding: 12px;
+}
+
+.main-media {
+    display: flex;
+    margin: 120px 0px;
+    max-width: 850px;
+    gap: 20px;
+}
+
+.main-media .main-text {
+    width: 50%;
+}
+.main-media .main-img {
+    width: 50%;
+    background-color: #e5e7eb7a;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text button {
+    background-color: #3882F6;
+    padding: 5px 20px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 6px;
+    color: #F9FAF8;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 120px 0px;
+}
+
+.info-block ul {
+    display: flex;
+    flex-direction: row;
+    max-width: 650px;
+    margin: 10px 0px;
+    gap: 30px
+}
+
+.card-img {
+    display: flex;
+    height: 120px;
+    width: 120px;
+    border-color: #3882F6;
+    border-radius: 6px;
+    border: 2px solid #3882F6;
+}
+
+.info-card p {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    text-align: center;
+}
+
+.quote-block {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    align-items: center;
+}
+
+.quote {
+    max-width: 650px;
+    margin: 120px 0px;
+}
+
+.quote-author {
+    text-align: right;
+    color: #1F2937;
+}
+
+.call-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto;
+}
+
+.call-card {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 40px 80px;
+    border-radius: 6px;
+}
+
+.call-card button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: 1px solid #F9FAF8;
+    border-radius: 6px;
+    padding: 5px 20px;
+}
+
+.footer {
+    display: flex;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    flex: 1;
 }
